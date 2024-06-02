@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h6 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+
+}
+
+.btn-danger {
+  margin: auto;
+  background-color: #ff4d4d;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #ff3333;
+}
+
+.custom-img {
+  width: 100%;
+  max-width: 500%;
+  height: 500%;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-content {
+  padding: 20px;
+}

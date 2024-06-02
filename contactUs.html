@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Agency</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h6 class="text-danger mb-3">AWARD WINNING</h6>
+        <h1 class="font-weight-bold mb-4">DIGITAL MARKETING AGENCY</h1>
+        <p class="mb-4">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#contactUSModal">CONTACT US</button>
+      </div>
+      <div class="col-md-6">
+        <img src="./public/images/IMAG1.png" alt="Digital Marketing" class="img-fluid custom-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactUSModal" tabindex="-1" aria-labelledby="contactUSModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactUSModalLabel">Talk to us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="https://getform.io/f/pbgxwxwa" method="POST">
+            <div class="form-group">
+              <label for="workEmail">Work email*</label>
+              <input type="email" class="form-control" id="workEmail" name="workEmail" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First name*</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last name*</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="termsCheck" name="termsCheck" required>
+              <label class="form-check-label" for="termsCheck">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+            </div>
+            <button type="submit" class="btn btn-danger">Contact Us</button>
+          </form>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

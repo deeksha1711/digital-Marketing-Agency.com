@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./public/styles/slider.css"> <!-- Link to your custom CSS file -->
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h6 class="text-danger mb-4">WHAT WE DO</h6>
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="font-weight-bold">SERVICES PROVIDE FOR YOU</h1>
+          <p class="font-weight-bold mb-4">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Slider -->
+  <div class="slider-container">
+    <div class="image-slider" id="image-slider">
+      <div class="slides-div" id="slide-1">
+        <img src="./public/images/snow.png" alt="Image 1" class="img">
+      </div>
+      <div class="slides-div" id="slide-2">
+        <img src="./public/images/bottles.png" alt="Image 2" class="img">
+      </div>
+      <div class="slides-div" id="slide-3">
+        <a href="https://www.fylehq.com" target="_blank">
+          <img src="./public/images/readmore.png" alt="Image 3" class="img">
+        </a>
+      </div>
+      <div class="slides-div" id="slide-4">
+        <img src="./public/images/fruits.png" alt="Image 4" class="img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots for navigation -->
+  <div class="dots-container">
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    <span class="dot" data-slide="3" id="third-dot"></span>
+  </div>
+
+  <script src="./src/slider.js"></script>
+</body>
+</html>

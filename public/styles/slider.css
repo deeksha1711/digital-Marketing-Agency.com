@@ -1,0 +1,124 @@
+/* Reset styles */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Main layout */
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Sliders */
+.slider-container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content:center;
+}
+
+.image-slider {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+  
+}
+
+.slides-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Adjust to fit content */
+  position: relative;
+  margin-right: 20px; /* Add gap between images */
+}
+
+.img {
+  width: 240px;
+  height: 370px;
+  transition: transform 0.5s, filter 0.5s;
+  /* filter: saturate(10%); */
+}
+
+.button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: background-color 0.5s, opacity 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slides-div:hover .button {
+  opacity: 1;
+}
+
+.slides-div:hover .img {
+  transform: scale(1.1);
+  filter: saturate(100%);
+}
+
+/* Dots navigation */
+.dots-container {
+  display: flex;
+  justify-content: left;
+  margin-left: 19%;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 5px;
+  background-color: black;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+ 
+  outline-offset: 4px; /* Offset the outline slightly */
+}
+
+.dot:hover,
+.dot.active {
+  outline: 1px solid red; /* Add an outline */
+  outline-color: red; /* Change outline color on hover or when active */
+  background-color: red;
+}
+
+
+/* Read More Button */
+.slides-div:hover .button::after {
+  content: "READ MORE";
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #ff4b43;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slides-div:hover .button::after:hover {
+  background-color: #e94339;
+}
+
+.button::after {
+  content: "";
+  display: none;
+}
+
+.slides-div:hover .button::after {
+  display: block;
+}
+
